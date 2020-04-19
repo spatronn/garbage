@@ -12,4 +12,8 @@ with open(filepath, 'r') as fp:
         result = dns.resolver.query(line,'A')
         for ipval in result:
           print(ipval.to_text())
+          ipaddr= ipval.to_text()
+          x = open("exported.txt", "a")
+          x.write('\n%s' % ipaddr)
+          x.close()
         line = fp.readline().strip()
