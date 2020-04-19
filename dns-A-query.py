@@ -14,6 +14,6 @@ with open(filepath, 'r') as fp:
           print(ipval.to_text())
           ipaddr= ipval.to_text()
           x = open("exported.txt", "a")
-          x.write('\n%s' % ipaddr)
+          x.write(line+";"+ipaddr+'\n')
           x.close()
         line = fp.readline().strip()
