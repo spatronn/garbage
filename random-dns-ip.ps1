@@ -1,4 +1,4 @@
-for ($i=1; $i -le 0; $i++)
+for ($i=1; $i -le 5; $i++)
 
 {
 $chars = [char[]]"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
